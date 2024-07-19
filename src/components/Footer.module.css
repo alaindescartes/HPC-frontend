@@ -1,0 +1,53 @@
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+.footerContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+.socialMedia a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.socialMedia a:hover {
+    color: #ccc;
+}
+
+.copyRight {
+    margin-top: 20px;
+    width: 100%;
+    clear: both;
+}
+
+@media (max-width: 600px) {
+    .footerContent {
+        flex-direction: column;
+    }
+
+    .links,
+    .socialMedia {
+        margin-bottom: 20px;
+    }
+}

@@ -1,0 +1,39 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+}
+
+.header, .coreHeader, .coreValuesHeader {
+    color: #004080;
+    text-align: center;
+}
+
+.introduction, .description, .purpose {
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.churchName {
+    font-style: italic;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.coreBeliefs, .coreValues {
+    list-style: inside;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .header, .coreHeader, .coreValuesHeader {
+        font-size: 18px;
+    }
+}

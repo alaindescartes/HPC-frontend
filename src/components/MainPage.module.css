@@ -1,0 +1,316 @@
+.container {
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.image img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: transparent;
+    padding: 20px;
+}
+
+.message h1 {
+    font-size: 4rem;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
+}
+
+.message p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.message button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: white;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.message button:hover {
+    background-color: #0056b3;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(to top, rgb(255, 255, 255), rgba(0, 0, 0, 0));
+}
+.schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    padding: 20px;
+}
+
+.schedule div {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.schedule h1 {
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.schedule p {
+    font-size: 1.2rem;
+    margin: 0;
+    font-weight: bolder;
+}
+
+.schedule div:nth-child(1) p {
+    color: orange;
+}
+.schedule div:nth-child(2) p {
+    color: #007bff;
+}
+
+.media h2{
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    margin: 20px auto;
+}
+
+.media {
+    background-color: #f8f9fa;
+    padding: 20px;
+    text-align: center;
+}
+
+.media h2 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.mediaIcons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social {
+    font-size: 3rem;
+    color: orange;
+    margin: 1rem;
+}
+
+.pastors {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.pastors h1 {
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.pastors img {
+    width: 100%;
+    max-width: 600px; /* Adjust based on your layout needs */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.pastors h2 {
+    color: #2a5298;
+}
+
+.pastors p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+blockquote {
+    background: #f0f0f0;
+    border-left: 5px solid #ccc;
+    margin: 1.5em 10px;
+    padding: 0.5em 10px;
+    quotes: "\201C""\201D""\2018""\2019";
+}
+
+blockquote p {
+    display: inline;
+    font-style: italic;
+    color: #555;
+}
+
+blockquote footer {
+    display: block;
+    font-size: 0.8em;
+    color: #777;
+    margin-top: 5px;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    .message h1 {
+        font-size: 2.5rem;
+        margin-top: 6rem;
+    }
+
+    .message p {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .message button {
+        font-size: 0.8rem;
+        padding: 8px 16px;
+    }
+
+    .schedule {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .schedule div h1 {
+        font-size: 2rem;
+    }
+
+    .schedule div p {
+        font-size: 1.5rem;
+    }
+    .media{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .media h2{
+        padding: 10px;
+    }
+    .media .mediaIcons{
+        display: flex;
+        flex-direction: row;
+        column-gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+    .media .mediaIcons span{
+        margin: 10px  30px
+    }
+    .media .mediaIcons .social{
+        font-size: 3rem;
+        color: orange;
+    }
+    .media .mediaIcons .social:hover{
+        transform: scale(1.5);
+    }
+    .pastors{
+        padding: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .pastors img{
+        width: 100%;
+        object-fit: cover;
+        height: 30%;
+        border-radius: 10px;
+    }
+    .pastors div:nth-of-type(2) {
+        padding: 20px;
+        max-width: 800px;
+        margin: auto;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .pastors div:nth-of-type(2) h2 {
+        color: #333333;
+        margin-bottom: 0.5em;
+    }
+
+    .pastors div:nth-of-type(2) p {
+        color: #666666;
+        line-height: 1.6;
+        font-size: 1.1em;
+    }
+
+    .pastors div:nth-of-type(2) blockquote {
+        background-color: #f9f9f9;
+        border-left: 5px solid #ccc;
+        margin: 1.5em 10px;
+        padding: 0.5em 20px;
+        font-style: italic;
+        font-size: 1em;
+    }
+
+    .pastors div:nth-of-type(2) footer {
+        text-align: right;
+        font-size: 0.9em;
+        margin-top: 0.5em;
+        color: #555555;
+    }
+
+
+}
+
+@media (max-width: 480px) {
+    .message h1 {
+        font-size: 2rem;
+    }
+
+    .message p {
+        font-size: 0.9rem;
+    }
+
+    .message button {
+        font-size: 0.7rem;
+        padding: 6px 12px;
+    }
+
+    .schedule h1 {
+        font-size: 1.2rem;
+        margin-right: 15px;
+    }
+
+    .schedule p {
+        font-size: 0.9rem;
+        margin-right: 15px;
+    }
+}
