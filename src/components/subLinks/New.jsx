@@ -9,7 +9,7 @@ const New = () => {
     <div className={NewStyles.container}>
       <div className={NewStyles.card}>
         <img
-          src="https://images.unsplash.com/photo-1580191947416-62d35a55e71d?w=2971&q=80&auto=format&fit=crop"
+          src="/images/welcome.jpg"
           alt="Welcome card"
         />
       </div>
