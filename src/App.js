@@ -7,6 +7,7 @@ import Who_we_are from "./components/subLinks/Who_we_are";
 import Faqs from "./components/subLinks/Faqs";
 import ContactUs from "./components/subLinks/Contact-us";
 import Error from "./components/ErrorPage";
+import Happening from "./components/subLinks/Happenning";
 
 //ROUTES
 const router = createBrowserRouter([
@@ -62,7 +63,7 @@ const router = createBrowserRouter([
       },
       {
         path: "happening",
-        element: <h1>EVENTS SECTION</h1>,
+        element: <Happening/>,
       },
       {
         path: "*",
